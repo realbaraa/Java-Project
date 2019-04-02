@@ -28,4 +28,24 @@ public class StaticRepo implements IRepo {
         }
         return pt;
     }
+
+    @Override
+    public List<Doctor> getDoctors() {
+        List<Doctor> doctors = new ArrayList<>();
+        Doctor d1 = new Doctor();
+        d1.setId(1);
+        d1.setName("Bill");
+        d1.setLastName("Gary");
+
+        Doctor d2 = new Doctor();
+        d2.setId(2);
+        d2.setName("John");
+        d2.setLastName("Black");
+
+        doctors.add(d1);
+        doctors.add(d2);
+
+        return doctors;
+    }
+
 }

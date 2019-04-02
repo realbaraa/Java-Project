@@ -7,4 +7,5 @@ import model.*;
 
 public interface IRepo {
      List<Patient> getPatients();
+     List<Doctor> getDoctors();
 }
